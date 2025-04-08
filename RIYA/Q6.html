@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Cards</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .cards {
+      background: lightgreen;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .cards img {
+      width: 100%;
+      height: auto;
+    }
+
+    .content {
+      padding: 15px;
+    }
+
+    @media (max-width: 650px) {
+        .container{
+        flex-wrap: wrap;
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="cards">
+      <img src="apple.jpg">
+      <div class="content">
+        <p>This is a picture of apple.You should eat apple every day as it keeps you away from doctor</p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <img src="milk.jpg">
+      <div class="content">
+        <p>This is Picture of milk .We should drink milk daily. It is white in color.</p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <img src="apple.jpg">
+      <div class="content">
+        <p>This is a picture of apple.You should eat apple every day as it keeps you away from doctor</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
